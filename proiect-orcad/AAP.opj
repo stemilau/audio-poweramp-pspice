@@ -1,0 +1,205 @@
+(ExpressProject "AAP"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\libraries\1n4148.lib"
+        (Type "Schematic Library"))
+      (File ".\libraries\bc817-25.lib"
+        (Type "Schematic Library"))
+      (File ".\libraries\bc846b.lib"
+        (Type "Schematic Library"))
+      (File ".\libraries\bc856b.lib"
+        (Type "Schematic Library"))
+      (File ".\libraries\bzx84c10.lib"
+        (Type "Schematic Library"))
+      (File ".\libraries\mjd31cg.lib"
+        (Type "Schematic Library"))
+      (File ".\libraries\mjd32cg.lib"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\aap.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (DRC_Scope "0")
+    (DRC_Action "0")
+    (DRC_Create_Warnings "FALSE")
+    (DRC_View_Output "FALSE")
+    (DRC_Preserved_Waived "FALSE")
+    (DRC_Run_Electrical_Rules "TRUE")
+    (DRC_Run_Physical_Rules "FALSE")
+    (DRC_Report_File
+       "C:\USERS\STEFA\DESKTOP\PROIECT1\P1_2022_432A_STEFAN_MIHAI_AAP_N6_ORCAD\SCHEMATICS\PROIECT-ORCAD\AAP.DRC")
+    (DRC_Check_Ports "FALSE")
+    (DRC_Check_Off-Page_Connectors "FALSE")
+    (DRC_Report_Ports_and_Off-page_Connectors "FALSE")
+    (DRC_SDT_Compatibility "FALSE")
+    (DRC_Report_Off-grid_Objects "FALSE")
+    (DRC_Check_Unconnected_Nets "TRUE")
+    (DRC_Check_for_Misleading_TAP "FALSE")
+    (DRC_Report_Netnames "FALSE")
+    (DRC_Check_Single_Node_Nets "TRUE")
+    (DRC_Run_Electrical_Custom_DRC "FALSE")
+    (DRC_Check_No_Driving_Source "TRUE")
+    (DRC_Check_Duplicate_NetNames "TRUE")
+    (DRC_Check_Floating_Pins "TRUE")
+    (DRC_Check_Physical_Power_Pins_Visibility "TRUE")
+    (DRC_Check_PCB_Footprint_Property "TRUE")
+    (DRC_Check_Normal_Convert_View_Sync "TRUE")
+    (DRC_Check_Incorrect_PinGroup_Assignment "TRUE")
+    (DRC_Check_High_Speed_Props_Syntax "TRUE")
+    (DRC_Check_Missing_Pin_Numbers "TRUE")
+    (DRC_Check_Device_With_No_Pins "TRUE")
+    (DRC_Check_Power_Ground_Short "TRUE")
+    (DRC_Identical_References "TRUE")
+    (DRC_Type_Mismatch "TRUE")
+    (DRC_Visible_Power_pins "FALSE")
+    (DRC_Report_Unused_Part_Packages "TRUE")
+    (DRC_Check_Name_Prop_For_HierBlocks "TRUE")
+    (DRC_Run_Physical_Custom_DRC "FALSE"))
+  (Folder "Outputs"
+    (File ".\aap-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\aap.drc"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\aap-pspicefiles\schematic1\proiect1.sim"
+        (DisplayName "SCHEMATIC1-proiect1")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\aap-pspicefiles\schematic1\freq1.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\aap-pspicefiles\schematic1\freq1.sim"
+        (DisplayName "SCHEMATIC1-freq1")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File
+         "C:\Users\stefa\Desktop\PROIECT1\P1_2022_432A_Stefan_Mihai_AAP_N6_OrCAD\Schematics\proiect-orcad\libraries\1n4148.lib"
+        (Type "Schematic Library"))
+      (File
+         "C:\Users\stefa\Desktop\PROIECT1\P1_2022_432A_Stefan_Mihai_AAP_N6_OrCAD\Schematics\proiect-orcad\libraries\bc817-25.lib"
+        (Type "Schematic Library"))
+      (File
+         "C:\Users\stefa\Desktop\PROIECT1\P1_2022_432A_Stefan_Mihai_AAP_N6_OrCAD\Schematics\proiect-orcad\libraries\bc846b.lib"
+        (Type "Schematic Library"))
+      (File
+         "C:\Users\stefa\Desktop\PROIECT1\P1_2022_432A_Stefan_Mihai_AAP_N6_OrCAD\Schematics\proiect-orcad\libraries\bc856b.lib"
+        (Type "Schematic Library"))
+      (File
+         "C:\Users\stefa\Desktop\PROIECT1\P1_2022_432A_Stefan_Mihai_AAP_N6_OrCAD\Schematics\proiect-orcad\libraries\bzx84c10.lib"
+        (Type "Schematic Library"))
+      (File
+         "C:\Users\stefa\Desktop\PROIECT1\P1_2022_432A_Stefan_Mihai_AAP_N6_OrCAD\Schematics\proiect-orcad\libraries\mjd31cg.lib"
+        (Type "Schematic Library"))
+      (File
+         "C:\Users\stefa\Desktop\PROIECT1\P1_2022_432A_Stefan_Mihai_AAP_N6_OrCAD\Schematics\proiect-orcad\libraries\mjd32cg.lib"
+        (Type "Schematic Library")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "K:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "K:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "K:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "K:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (QMJD31C
+      (FullPartName "QMJD31C.Normal")
+      (LibraryName
+         "C:\USERS\STEFA\DESKTOP\PROIECT1\LIB_MODELEPSPICE_ANEXA_1\MODELE_A1_LIB\MJD31CG.OLB")
+      (DeviceIndex "0"))
+    (QMJD32CT4G
+      (FullPartName "QMJD32CT4G.Normal")
+      (LibraryName
+         "C:\USERS\STEFA\DESKTOP\PROIECT1\LIB_MODELEPSPICE_ANEXA_1\MODELE_A1_LIB\MJD32CG.OLB")
+      (DeviceIndex "0"))
+    (QBC846B
+      (FullPartName "QBC846B.Normal")
+      (LibraryName
+         "C:\USERS\STEFA\DESKTOP\PROIECT1\LIB_MODELEPSPICE_ANEXA_1\MODELE_A1_LIB\BC846B.OLB")
+      (DeviceIndex "0"))
+    (QBC817-25
+      (FullPartName "QBC817-25.Normal")
+      (LibraryName
+         "C:\USERS\STEFA\DESKTOP\PROIECT1\LIB_MODELEPSPICE_ANEXA_1\MODELE_A1_LIB\BC817-25.OLB")
+      (DeviceIndex "0"))
+    (BZX84-C10
+      (FullPartName "BZX84-C10.Normal")
+      (LibraryName
+         "C:\USERS\STEFA\DESKTOP\PROIECT1\LIB_MODELEPSPICE_ANEXA_1\MODELE_A1_LIB\BZX84C10.OLB")
+      (DeviceIndex "0"))
+    (QBC856B
+      (FullPartName "QBC856B.Normal")
+      (LibraryName
+         "C:\USERS\STEFA\DESKTOP\PROIECT1\LIB_MODELEPSPICE_ANEXA_1\MODELE_A1_LIB\BC856B.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "K:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "K:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "stefa")
+  (LastUsedLibraryBrowseDirectory
+     "K:\Cadence\SPB_17.2\tools\capture\library\pspice")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\stefa\Desktop\PROIECT1\P1_2022_432A_Stefan_Mihai_AAP_N6_OrCAD\Schematics\proiect-orcad\aap.dsn")
+      (Path "Design Resources"
+         "C:\Users\stefa\Desktop\PROIECT1\P1_2022_432A_Stefan_Mihai_AAP_N6_OrCAD\Schematics\proiect-orcad\aap.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 427 0 412"))
+      (Tab 0))
+    (Doc
+      (Type "TextFile")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 182 1466 182 708"))
+      (Path
+         "C:\Users\stefa\Desktop\PROIECT1\P1_2022_432A_Stefan_Mihai_AAP_N6_OrCAD\Schematics\proiect-orcad\aap-pspicefiles\schematic1\schematic1.net")
+      (Scroll "0"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 156 1466 156 607")
+        (Scroll "0 310")
+        (Zoom "172")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\STEFA\DESKTOP\PROIECT1\P1_2022_432A_STEFAN_MIHAI_AAP_N6_ORCAD\SCHEMATICS\PROIECT-ORCAD\AAP.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (ISPCBBASICLICENSE "false"))

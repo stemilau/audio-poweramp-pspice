@@ -1,0 +1,273 @@
+
+**** 11/22/22 18:03:13 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-proiect1"  [ C:\Users\stefa\Desktop\PROIECT1\proiect-orcad\AAP-PSpiceFiles\SCHEMATIC1\proiect1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "proiect1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/stefa/Desktop/PROIECT1/lib_modelepspice_anexa_1/modele_a1_lib/1n4148.lib" 
+.LIB "C:/Users/stefa/Desktop/PROIECT1/lib_modelepspice_anexa_1/modele_a1_lib/bc817-25.lib" 
+.LIB "C:/Users/stefa/Desktop/PROIECT1/lib_modelepspice_anexa_1/modele_a1_lib/bc846b.lib" 
+.LIB "C:/Users/stefa/Desktop/PROIECT1/lib_modelepspice_anexa_1/modele_a1_lib/bc856b.lib" 
+.LIB "C:/Users/stefa/Desktop/PROIECT1/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c10.lib" 
+.LIB "C:/Users/stefa/Desktop/PROIECT1/lib_modelepspice_anexa_1/modele_a1_lib/mjd31cg.lib" 
+.LIB "C:/Users/stefa/Desktop/PROIECT1/lib_modelepspice_anexa_1/modele_a1_lib/mjd32cg.lib" 
+* From [PSPICE NETLIST] section of C:\Users\stefa\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source AAP
+V_V3         N00148 0  
++SIN 0 1 1k 0 0 0
+C_C1         N00148 N00219 1u
+R_R1         N00219 N00373 3.7
+R_R6         N00373 0 33k
+Q_Q1         N01159 N00373 N006171 QBC856B 
+Q_Q2         N01197 N01733 N006411 QBC856B 
+R_R91         N01218 N006171 330
+R_R92         N01218 N006411 340
+R_R11         N01159 N01197 30k
+R_R8         N01218 N01606 15k
+D_D1         0 N01606 BZX84-C10 
+R_R7         N01606 N01976 3.3k
+R_R10         N01733 N017611 3.3k
+C_C3         0 N017611 10u
+R_R31         N01733 N02059 33k
+R_R12         N01976 N02083 10
+C_C4         N02059 N02083 20u
+R_R13         N02083 N02258 22
+Q_Q3         N02328 N01159 N022901 QBC817-25 
+Q_Q4         N02258 N02570 N02328 QBC846B 
+R_R15         N022901 N01197 2.87
+R_R141         N02258 N02570 1k
+R_R142         N02570 N02328 1.8k
+Q_Q6         N02783 N02328 N02824 QMJD32CT4G 
+Q_Q8         N02824 N02783 N01197 QMJD31C 
+R_R27         N02783 N01197 0.51
+R_R29         N02059 N02824 0.32
+R_R28         N03028 N02059 0.32
+Q_Q7         N01976 N02979 N03028 QMJD31C 
+Q_Q5         N01976 N02258 N02979 QMJD31C 
+R_R26         N02979 N03028 0.51
+R_R30         N02059 N03612 0.1
+R_Rs         0 N03612 4
+V_V1         N01976 0 27Vdc
+V_V2         0 N01197 27Vdc
+
+**** RESUMING proiect1.cir ****
+.END
+
+**** 11/22/22 18:03:13 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-proiect1"  [ C:\Users\stefa\Desktop\PROIECT1\proiect-orcad\AAP-PSpiceFiles\SCHEMATIC1\proiect1.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BZX84-C10       
+          IS  110.880000E-18 
+           N     .92657      
+         ISR   49.142000E-12 
+         IKF  149.75         
+          BV   10.124        
+         IBV     .72438      
+          RS     .85899      
+          TT  973.820000E-09 
+         CJO   57.292000E-12 
+          VJ     .67995      
+           M     .33236      
+
+
+**** 11/22/22 18:03:13 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-proiect1"  [ C:\Users\stefa\Desktop\PROIECT1\proiect-orcad\AAP-PSpiceFiles\SCHEMATIC1\proiect1.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QBC817-25       QBC846B         QBC856B         QMJD31C         
+               NPN             NPN             PNP             NPN             
+       LEVEL    1               1               1               1            
+          IS   91.980000E-15   18.220000E-15   20.140000E-15   90.620200E-12 
+          EG                                                    1.05         
+          BF  338.8           324.4           315.3             3.418700E+03 
+          NF    1.003            .9932           .9974          1.17603      
+         VAF  107.9            82              39.15           29.2393       
+         IKF     .4913           .109            .079            .108267     
+         ISE  446.800000E-18  289.400000E-18    6.578000E-15  537.193000E-09 
+          NE    1.65            1.4             1.45            4            
+          BR   29.48            8.29            8.68          367.353        
+          NR    1.002            .9931           .9952          5            
+         VAR   25              17.9             9.5             1.631        
+         IKR     .193            .09             .09            1.15207      
+         ISC    5.109000E-15    9.982000E-12   16.330000E-15    1.157540E-09 
+          NC    1.071           1.763           1.15            1.49179      
+         ISS    0               0               0               0            
+          RB    1              10              10              22.4853       
+         RBM    1               5               5.000000E-06    1.000000E-12 
+         IRB    1.000000E+03    5.000000E-06    5.000000E-06    2.209370E-03 
+          RE     .2126           .649            .663         100.000000E-06 
+          RC     .143            .7014           .718            .138633     
+         CJE   38.250000E-12   12.440000E-12   11.350000E-12  373.889000E-12 
+         VJE     .7004           .7579           .7071           .67672      
+         MJE     .364            .3656           .3808           .575056     
+         CJC   12.700000E-12    3.347000E-12    6.395000E-12  352.510000E-12 
+         VJC     .4431           .5463           .4951           .884306     
+         MJC     .3983           .391            .44             .473486     
+        XCJC     .4555           .6193           .6288           .1          
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+         MJS     .333            .333            .333            .5          
+          FC     .905            .979            .9059           .8          
+          TF  522.900000E-12  490.800000E-12  654.600000E-12   10.000000E-09 
+         XTF  219.7             9.51            5.387           3.4926       
+         VTF    3.502           2.927           6.245          12.6615       
+         ITF    7.257            .3131           .2108           .052395     
+          TR   70.000000E-12   90.000000E-09   55.000000E-09    3.298030E-06 
+         XTB                                                  999.997000E-15 
+         XTI                                                    1.000000E-12 
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.42            2.2             2.42         
+           D     .87             .87             .52             .87         
+
+
+               QMJD32CT4G      
+               PNP             
+       LEVEL    1            
+          IS  363.152000E-15 
+          EG    1.15135      
+          BF  272.001        
+          NF     .981175     
+         VAF    8.02311      
+         IKF     .255979     
+         ISE    1.395810E-09 
+          NE    2.64418      
+          BR   26.8791       
+          NR     .990094     
+         VAR   38.8632       
+         IKR    2.55979      
+         ISC  254.712000E-15 
+          NC    1.09617      
+         ISS    0            
+          RB  210.108        
+         RBM   10.000000E-06 
+         IRB   13.167500E-06 
+          RE     .03296      
+          RC     .164799     
+         CJE  201.825000E-12 
+         VJE     .360096     
+         MJE     .350357     
+         CJC  118.774000E-12 
+         VJC     .694849     
+         MJC     .382715     
+        XCJC     .778775     
+         CJS    0            
+         VJS     .75         
+         MJS     .5          
+          FC     .9          
+          TF    3.622020E-09 
+         XTF  276.075        
+         VTF     .608188     
+         ITF    7.779510E-03 
+          TR    2.029570E-06 
+         XTB     .709265     
+         XTI    4.43052      
+          KF    0            
+          AF    1            
+          CN    2.2          
+           D     .52         
+
+
+**** 11/22/22 18:03:13 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-proiect1"  [ C:\Users\stefa\Desktop\PROIECT1\proiect-orcad\AAP-PSpiceFiles\SCHEMATIC1\proiect1.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00148)    0.0000 (N00219)     .0427 (N00373)     .0427 (N01159)  -25.6450     
+
+(N01197)  -27.0000 (N01218)     .8549 (N01606)    9.9967 (N01733)   16.7550     
+
+(N01976)   27.0000 (N02059)   16.7550 (N02083)   24.7960 (N02258)   19.9460     
+
+(N02328)   16.7170 (N02570)   17.6540 (N02783)  -27.0000 (N02824)   16.7550     
+
+(N02979)   19.0150 (N03028)   18.0630 (N03612)   16.3470 (N006171)     .6538    
+
+(N006411)     .8549                   (N017611)   16.7550                       
+
+(N022901)  -26.4240                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         0.000E+00
+    V_V1        -4.292E+00
+    V_V2        -2.007E-01
+
+    TOTAL POWER DISSIPATION   1.21E+02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/22/22 18:03:13 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-proiect1"  [ C:\Users\stefa\Desktop\PROIECT1\proiect-orcad\AAP-PSpiceFiles\SCHEMATIC1\proiect1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .11
+

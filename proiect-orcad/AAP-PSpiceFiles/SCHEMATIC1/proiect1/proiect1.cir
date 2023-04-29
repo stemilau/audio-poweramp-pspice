@@ -1,0 +1,26 @@
+** Profile: "SCHEMATIC1-proiect1"  [ C:\Users\stefa\Desktop\PROIECT1\proiect-orcad\AAP-PSpiceFiles\SCHEMATIC1\proiect1.sim ] 
+
+** Creating circuit file "proiect1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/stefa/Desktop/PROIECT1/lib_modelepspice_anexa_1/modele_a1_lib/1n4148.lib" 
+.LIB "C:/Users/stefa/Desktop/PROIECT1/lib_modelepspice_anexa_1/modele_a1_lib/bc817-25.lib" 
+.LIB "C:/Users/stefa/Desktop/PROIECT1/lib_modelepspice_anexa_1/modele_a1_lib/bc846b.lib" 
+.LIB "C:/Users/stefa/Desktop/PROIECT1/lib_modelepspice_anexa_1/modele_a1_lib/bc856b.lib" 
+.LIB "C:/Users/stefa/Desktop/PROIECT1/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c10.lib" 
+.LIB "C:/Users/stefa/Desktop/PROIECT1/lib_modelepspice_anexa_1/modele_a1_lib/mjd31cg.lib" 
+.LIB "C:/Users/stefa/Desktop/PROIECT1/lib_modelepspice_anexa_1/modele_a1_lib/mjd32cg.lib" 
+* From [PSPICE NETLIST] section of C:\Users\stefa\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END
